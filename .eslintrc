@@ -1,0 +1,23 @@
+{
+  "extends": ["myll", "myll/react"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 100,
+        "useTabs": false,
+        "jsxSingleQuote": false,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid",
+        "proseWrap": "preserve",
+        "htmlWhitespaceSensitivity": "css",
+        "endOfLine": "lf",
+        "trailingComma": "all",
+      },
+    ]
+  }
+}

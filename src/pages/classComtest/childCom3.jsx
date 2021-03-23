@@ -1,6 +1,6 @@
-import React, { PureComponent } from "react"
+import React, { Component } from "react"
 
-class ChildRight extends PureComponent {
+class ChildLeft extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -9,11 +9,11 @@ class ChildRight extends PureComponent {
   }
 
   componentDidMount() {
-    console.log("child2 mount")
+    console.log("child3 mount")
   }
 
   componentDidUpdate() {
-    console.log("child2 update")
+    console.log("child3 update")
   }
 
   handleCount = () => {
@@ -25,7 +25,7 @@ class ChildRight extends PureComponent {
 
   render() {
     return (
-      <div className="child2">
+      <div className="child3">
         <div onClick={this.handleCount}>
           <span>{this.props.name}</span>--{this.state.count}
         </div>
@@ -39,4 +39,4 @@ class ChildRight extends PureComponent {
   }
 }
 
-export default ChildRight
+export default ChildLeft
