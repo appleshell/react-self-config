@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react"
+import React, { PureComponent } from 'react'
 
 class ChildRight extends PureComponent {
   constructor(props) {
@@ -9,11 +9,11 @@ class ChildRight extends PureComponent {
   }
 
   componentDidMount() {
-    console.log("child2 mount")
+    console.log('child2 mount')
   }
 
   componentDidUpdate() {
-    console.log("child2 update")
+    console.log('child2 update')
   }
 
   handleCount = () => {
@@ -27,7 +27,7 @@ class ChildRight extends PureComponent {
     return (
       <div className="child2">
         <div onClick={this.handleCount}>
-          <span>{this.props.name}</span>--{this.state.count}
+          <span>{this.props?.name}</span>--{this.state.count}
         </div>
         <div>
           <button onClick={() => this.props.onChange(`cc${Math.random()}`)}>
